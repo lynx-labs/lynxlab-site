@@ -1,5 +1,6 @@
 <?php
 
-header("location: ./index.php")
+header("location: 0/")
+
 
 ?>

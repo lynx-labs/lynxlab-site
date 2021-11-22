@@ -27,7 +27,7 @@
 <section class="bg_main" id="risk_centres">
     <div class="fg_center ca_ctre">
 
-       <h3 class="can_head">Cancer risk genetic test</h3>
+       <h3 class="can_head">CANCER RISK GENETIC TEST</h3>
        
        <p class="can_1">
             Genetic cancer risk testing helps determine 
@@ -43,9 +43,10 @@
             <b class="sub_hd">CANCER RISK TEST</b>
             
             <p>
-                The socio-economic effect of Cancer on our society cannot be overemphasized.
-                The need for early diagnosis is therefore of immense importance in the cost of treatment and overall outcome of cancer management.
-                Genetic Cancer Risk Test is all about assessing the risk of individuals who is likely to have hereditary cancer. It is particularly advised that the relatives of cancer patients be encouraged to benefit from this test. Other interested patients, especially those on comprehensive medical examination, can also benefit.
+                The socio-economic effect of Cancer on our society cannot be overemphasized. The need for early diagnosis is therefore of immense importance in the cost of treatment and overall outcome of cancer management.
+                <br>
+                Genetic Cancer Risk Test is all about assessing the risk of individuals who is likely to have hereditary cancer. It is particularly advised that the relatives of cancer patients be encouraged to benefit from this test. Other interested patients, especially those on comprehensive medical examination, can also benefit. Genetic cancer risk testing helps determine your chance of developing cancer in your lifetime by searching for specific changes (mutations) in your genes, chromosome, or protein. 
+
             </p>
             <br><br>
 
@@ -113,6 +114,28 @@
 
 
 
-<?php require 'modal-section.php' ?>
+
+<!-- ==================== CONNECT SECTION ======================== -->
+<section class="bg_main" id="connect">
+    <div class="fg_center conn">
+        
+        <div class="connect__1" data-aos="fade-up" data-aos-duration="3400">
+            <div class="title">
+                <h2 class="sub__title con__title ">Take control of your health</h2>
+            </div>
+        </div>
+
+        <div class="connect_btn" data-aos="fade-up" data-aos-duration="3400">
+            <a href="contact" class="cnt_btn ctb_1">Book Appointment</a>
+            <a href="bookings" class="cnt_btn ctb_2">Become a Collection Agent</a>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- ==================== END CONNECT SECTION ======================== -->
+
 
 <?php require 'footer.php' ?>

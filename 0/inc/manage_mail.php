@@ -38,8 +38,8 @@ if (isset($_POST['send']))
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = "thinksoftcreative@gmail.com";                     // SMTP username
-        $mail->Password   = "thinksoft2021";                               // SMTP password
+        $mail->Username   = "lynxdna1@gmail.com";                     // SMTP username
+        $mail->Password   = "#lynx@2017#";                          // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
         $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
@@ -47,7 +47,7 @@ if (isset($_POST['send']))
         $mail->setFrom('info@lynxlaboratories.com.ng', 'Lynx Support Service');
         $mail->addAddress($email, $phone);     // Add a recipient
         $mail->addAddress($email);               // Name is optional
-        $mail->addCC('info@lynxlaboratories.com.ng');
+        $mail->addCC('Lynxdna1@gmail.com');
         $mail->addBCC('info@lynxlaboratories.com.ng');
 
         // Content
@@ -165,7 +165,7 @@ if (isset($_POST['send']))
             echo  "<script>alert('Message has been sent! Check your email for confirmation. Thank you for contacting us')</script>";
 
             // Insert data into DATABASE
-            $sql = "INSERT INTO mails(email, phone, message) VALUES ('$email', '$phone', '$message')";
+            $sql = "INSERT INTO mails(`email`, `phone`, `message`) VALUES ('$email', '$phone', '$message')";
             $query = mysqli_query($conn, $sql) or die("Failed to insert to database!" . mysqli_error($conn));
             $mail_id = mysqli_insert_id($conn);
 
@@ -195,8 +195,9 @@ if (isset($_POST['send']))
         }
         else 
         {
-            echo  "<script>alert('Message could not be sent. Check your internet connection')</script>";
-           
+            // echo  "<script>alert('Message could not be sent. Check your internet connection')</script>";
+            header("location: ../");  
+            return false; 
         }
         // ========== END OF PHP MAILER TO SEND EMAILS =================
 

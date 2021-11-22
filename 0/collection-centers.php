@@ -1,5 +1,7 @@
 <?php require 'header.php' ?>
 <?php require 'nav.php' ?>
+<?php require 'inc/function.php' ?>
+<?php require 'inc/dbconn.php' ?>
 
 <!-- ***** Preloader Start ***** -->
 <div id="preloader">
@@ -23,108 +25,24 @@
 <!-- MAIN CENTRES SECTION -->
 <section class="bg_main" id="ct_collet">
     <div class="fg_center main_ctre">
-        <h3 class="abt_h1" data-aos="fade-up" data-aos-duration="3000">Main Collection Centres</h3>
+        <h3 class="abt_h1" data-aos="fade-up" data-aos-duration="3000">Main Collection Centre</h3>
 
         <div class="main_ctr">
             
             <!-- 1 center -->
             <div class="ctr_1">
-                <div class="set_1_ctr">
+                <div class="set_1_ctr" style="justify-content: center;">
                     <i class='bx bxs-location-plus' ></i>
                     <h3>Lagos Office</h3>
                 </div>
-                <p class="set_bdy">
-                    <b>ANIYUN HOSPITAL</b> <br>
-                    3, Femi Aderibigbe close, off Diya street, Ifako,
-                    Gbagada, lagos. <br>
-                    Dr.OGUNBADEJO(Medical Director)- 08052246001,08023140773
-                    NWAOKON  LUCIA(08030592106) <br>
-                    <i>aniyunhospital@yahoo.com, aniyunhospital@yahoo.co.uk</i> 
-
+                <p class="set_bdy" style="   max-width: 50%;margin: auto;">
+                    <b>OUR OFFICE ADDRESS</b> <br>
+                    9B, JAMES OLULEYE CRESCENT, OFF ADENIYI JONES AVENUE 
+                    KOKO B/STOP BESIDE ECO BANK, HARMONY ENCLAVE ESTATE 
+                    IKEJA, LAGOS. 
                 </p>
             </div>
-
-            <!-- 1 center -->
-            <div class="ctr_1">
-                <div class="set_1_ctr">
-                    <i class='bx bxs-location-plus' ></i>
-                    <h3>Lagos Office</h3>
-                </div>
-                <p class="set_bdy">
-                    <b>NEWGATE  HOSPITAL  IKORODU  LAGOS</b><br>
-                    59, Lagos  Road, ikorodu. <br>
-                    Dr. SIKIRU OJO(Medical Director)-08039552866, <br>
-                    FAGBOLA  KUNLE (08051405215)
-
-                </p>
-            </div>
-
-            <!-- 2 center -->
-            <div class="ctr_1">
-                <div class="set_1_ctr">
-                    <i class='bx bxs-location-plus' ></i>
-                    <h3>Lagos Office</h3>
-                </div>
-                <p class="set_bdy">
-                    <b>PATHFINDER  DIAGNOSTIC  LABORATORY  LTD</b> <br>
-                    22,Road, k-CLOSE, BLOCK 4, festac Town. Lagos <br>
-                    MIKE EFFIONG(08033187411)   08056836962 <br>
-                    <i>mikeefimed@yahoo.com; udoheffieng59@gmail.com</i> 
-
-                </p>
-            </div>
-
-            <!-- 3 center -->
-            <div class="ctr_1">
-                <div class="set_1_ctr">
-                    <i class='bx bxs-location-plus' ></i>
-                    <h3>Lagos Office</h3>
-                </div>
-                <p class="set_bdy">
-                   <b>UNILAG</b> <br>
-                    Dr. (Mrs)  Oyenike  .A.  Adeyemo, LEAD  FELLOW
-                    Dept.  of  Cell Biology  and  Genetics
-                    (Molecular  Biology  research  group)
-                    Faculty  of  science
-                    University  of Lagos  Akoka  yaba <br>
-                    <strong> <i>08055073665,  07064759599</i> </strong> 
-                    <i>adeyemona@gmail.com,   adeyemonike@yahoo.com
-                    Godeyemo@unilag.edu.ng</i>  
-
-                </p>
-            </div>
-
-            <!-- 4 center -->
-            <div class="ctr_1">
-                <div class="set_1_ctr">
-                    <i class='bx bxs-location-plus' ></i>
-                    <h3>Lagos Office </h3>
-                </div>
-                <p class="set_bdy">
-                   <b>KRISTA  MED  LABORATORY</b> <br> 
-                    128, Mushin Road, opp  Isolo  General  Hospital, Isolo
-                    <b><i>08037234497</i> </b>
-                    <i>ajosea@gmail.com</i> 
-
-                </p>
-            </div>
-
-            <!-- 5 center -->
-            <div class="ctr_1">
-                <div class="set_1_ctr">
-                    <i class='bx bxs-location-plus' ></i>
-                    <h3>Lagos Office</h3>
-                </div>
-                <p class="set_bdy">
-                    <b>FORENSIC CONSULTANTS  </b> <br>
-                    BROAD STREET, LAGOS <br>
-                    Dr Osiyemi Abiodun (08033008505)
-                    Tina Okafor (07036341126) <br>
-                    <i>abbeyosiyemi@gmail.com
-                    tinaokaforugo@gmail.com</i> 
-
-                </p>
-            </div>
+          
 
         </div>
     </div>
@@ -345,6 +263,99 @@
                     IKEJA, LAGOS.   
                 </p>
             </div>
+            <!-- 1 center -->
+            <div class="ctr_1">
+                <div class="set_1_ctr">
+                    <i class='bx bxs-location-plus' ></i>
+                    <h3>Lagos Office</h3>
+                </div>
+                <p class="set_bdy">
+                    <b>ANIYUN HOSPITAL</b> <br>
+                    3, Femi Aderibigbe close, off Diya street, Ifako,
+                    Gbagada, lagos. <br>
+                    Dr.OGUNBADEJO(Medical Director)- 08052246001,08023140773
+                    NWAOKON  LUCIA(08030592106) <br>
+                    <i>aniyunhospital@yahoo.com, aniyunhospital@yahoo.co.uk</i> 
+
+                </p>
+            </div>
+            <!-- 1 center -->
+            <div class="ctr_1">
+                <div class="set_1_ctr">
+                    <i class='bx bxs-location-plus' ></i>
+                    <h3>Lagos Office</h3>
+                </div>
+                <p class="set_bdy">
+                    <b>NEWGATE  HOSPITAL  IKORODU  LAGOS</b><br>
+                    59, Lagos  Road, ikorodu. <br>
+                    Dr. SIKIRU OJO(Medical Director)-08039552866, <br>
+                    FAGBOLA  KUNLE (08051405215)
+
+                </p>
+            </div>
+            <!-- 1 center -->
+            <div class="ctr_1">
+                <div class="set_1_ctr">
+                    <i class='bx bxs-location-plus' ></i>
+                    <h3>Lagos Office</h3>
+                </div>
+                <p class="set_bdy">
+                    <b>PATHFINDER  DIAGNOSTIC  LABORATORY  LTD</b> <br>
+                    22,Road, k-CLOSE, BLOCK 4, festac Town. Lagos <br>
+                    MIKE EFFIONG(08033187411)   08056836962 <br>
+                    <i>mikeefimed@yahoo.com; udoheffieng59@gmail.com</i> 
+ 
+                </p>
+            </div>
+            <!-- 1 center -->
+            <div class="ctr_1">
+                <div class="set_1_ctr">
+                    <i class='bx bxs-location-plus' ></i>
+                    <h3>Lagos Office</h3>
+                </div>
+                <p class="set_bdy">
+                    <b>UNILAG</b> <br>
+                    Dr. (Mrs)  Oyenike  .A.  Adeyemo, LEAD  FELLOW
+                    Dept.  of  Cell Biology  and  Genetics
+                    (Molecular  Biology  research  group)
+                    Faculty  of  science
+                    University  of Lagos  Akoka  yaba <br>
+                    <strong> <i>08055073665,  07064759599</i> </strong> 
+                    <i>adeyemona@gmail.com,   adeyemonike@yahoo.com
+                    Godeyemo@unilag.edu.ng</i>  
+
+                </p>
+            </div>
+            <!-- 1 center -->
+            <div class="ctr_1">
+                <div class="set_1_ctr">
+                    <i class='bx bxs-location-plus' ></i>
+                    <h3>Lagos Office</h3>
+                </div>
+                <p class="set_bdy">
+                    <b>KRISTA  MED  LABORATORY</b> <br> 
+                    128, Mushin Road, opp  Isolo  General  Hospital, Isolo
+                    <b><i>08037234497</i> </b>
+                    <i>ajosea@gmail.com</i> 
+
+                </p>
+            </div>
+            <!-- 1 center -->
+            <div class="ctr_1">
+                <div class="set_1_ctr">
+                    <i class='bx bxs-location-plus' ></i>
+                    <h3>Lagos Office</h3>
+                </div>
+                <p class="set_bdy">
+                    <b>FORENSIC CONSULTANTS  </b> <br>
+                    BROAD STREET, LAGOS <br>
+                    Dr Osiyemi Abiodun (08033008505)
+                    Tina Okafor (07036341126) <br>
+                    <i>abbeyosiyemi@gmail.com
+                    tinaokaforugo@gmail.com</i> 
+
+                </p>
+            </div>
 
         </div>
 
@@ -380,52 +391,46 @@
                 <h2 class="sub__title">Blogposts & Health Tips</h2>
             </div>
             <p class="j_txt">
-                Join thousands of agents around the 
-                world generating revenue 
-                by becoming a collection agent.
+                Discover how great our organization everywhere increase standards of 
+                testing quality, maximize productivity and other health tips on our blog post.
+                We'll keep you in the loop with everything good going on in Lynx DNA diagnostic centers
+                all over the world.
             </p>
         </div>
 
         <div class="blog_grid">
             
+            <?php
+                $post = getAllPost($conn, 3);
+                foreach ($post as $value) 
+                {
+                
+            ?>
+
             <!-- 1 box -->
             <div class="blg_bx">
-                <div class="blg_img">
-                    <img src="img/r_1.png" alt="">
+                <div class="blg_img"style="height: 250px;overflow:hidden">
+                    <img style="width:100%;height:100%;" src="data:image/jpeg;base64,<?php echo getPostImageById($conn, $value['id'])?>" />
                 </div>
                 <div class="blg_set">
-                    <h3 class="blg_h3">BLOG</h3>
-                    <p class="blg_txt">
-                        Everything about DNA Test
-                    </p>
+                    <h3 class="blg_h3" id="blg_h3" style="display: flex;align-items:center;justify-content:space-between">
+                        <a href="blog/post-details?id=<?php echo $value['id']?>" style="color: #4097d4;">
+                            <?php echo $value['title']?>
+                        </a>
+                        <div class="small" style="font-size: 55%;font-weight: 400;color: #b7b9cc"><?php echo convertYear($value['created_date'])?></div>
+                    </h3>
+
+                    <div class="blg_txt">
+                        <?php
+                            $tags =  "<th><tr><td><table><tbody><thead><em><i><blockquote><br><ul><cite><q><address><li><a><b><h1><h2><h3><h4><h5><h6><strong><u>";
+                        ?>
+                        <?php echo substr(strip_tags(html_entity_decode($value['content']), $tags), 0, 250). "..."?>
+                    </div>
                 </div>
             </div>
 
-            <!-- 2 box -->
-            <div class="blg_bx">
-                <div class="blg_img">
-                    <img src="img/r_2.png" alt="">
-                </div>
-                <div class="blg_set">
-                    <h3 class="blg_h3">BLOG</h3>
-                    <p class="blg_txt">
-                        Everything about DNA Test
-                    </p>
-                </div>
-            </div>
+            <?php };?>
 
-            <!-- 3 box -->
-            <div class="blg_bx">
-                <div class="blg_img">
-                    <img src="img/r_3.png" alt="">
-                </div>
-                <div class="blg_set">
-                    <h3 class="blg_h3">BLOG</h3>
-                    <p class="blg_txt">
-                        Everything about DNA Test
-                    </p>
-                </div>
-            </div>
 
         </div>
 

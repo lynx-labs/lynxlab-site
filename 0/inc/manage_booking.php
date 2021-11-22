@@ -43,16 +43,16 @@ if (isset($_POST['send']))
          $mail->isSMTP();                                            // Send using SMTP
          $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
          $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-         $mail->Username   = "thinksoftcreative@gmail.com";                     // SMTP username
-         $mail->Password   = "thinksoft2021";                               // SMTP password
+         $mail->Username   = "lynxdna1@gmail.com";                     // SMTP username
+         $mail->Password   = "#lynx@2017#";                          // SMTP password
          $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
          $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
- 
+  
          //Recipients
          $mail->setFrom('info@lynxlaboratories.com.ng', 'Lynx Support Service');
          $mail->addAddress($email, $phone);     // Add a recipient
          $mail->addAddress($email);               // Name is optional
-         $mail->addCC('info@lynxlaboratories.com.ng');
+         $mail->addCC('Lynxdna1@gmail.com');
          $mail->addBCC('info@lynxlaboratories.com.ng');
  
          // Content
@@ -185,14 +185,14 @@ if (isset($_POST['send']))
                    $_SESSION['status'] = "Thank you for Joining. You'll get feedback from our customer service";
                    $_SESSION['status_title'] = "Success";
                    $_SESSION['status_code'] = "success";
-                   header("location: ../bookings");    
+                   header("location: ../bookings.php");    
                }
                else 
                {
                    $_SESSION['status'] = "Failed! Something went wrong";
                    $_SESSION['status_title'] = "Error";
                    $_SESSION['status_code'] = "error";
-                   header("location: ../bookings");       
+                   header("location: ../bookings.php");       
                }
         }
 
@@ -202,7 +202,7 @@ if (isset($_POST['send']))
             $_SESSION['status'] = "Failed please check empty field";
             $_SESSION['status_title'] = "Error";
             $_SESSION['status_code'] = "error";
-            header("location: ../bookings");  
+            header("location: ../bookings.php");  
     
     }
 

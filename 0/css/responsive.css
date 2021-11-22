@@ -1,5 +1,50 @@
 
 /* -============ RESPONSIVENESS FOR Tablet =========== */
+.blg_text {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.disable {
+    opacity: 0.3 !important;
+    background: white !important;
+    border: 2px solid #4097d4 !important;
+    color: #4097d4 !important;
+}
+
+.bx_1,
+.bx_2,
+.bx_3,
+.bx_4
+{
+    box-shadow: none !important;
+}
+
+.tag_body2,
+.tag_body {
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s ease all;
+}
+
+.tag {
+    display: inline-flex;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+
+#chk2,
+#chk {
+  display: none;
+}
+
+#chk:checked ~ .tag_body{
+    max-height: 40em;
+}
+
+#chk2:checked ~ .tag_body2{
+    max-height: 40em;
+}
 
  @media only screen and  (max-width: 768px){ */
 
@@ -7,12 +52,20 @@
         max-width: 100%;
         max-height: auto;
     }
-
+    #blg_h3 {
+        flex-direction: column; 
+        font-size: 14;
+        align-items: flex-start;
+    }
     .fg_center{
         max-height: auto;
         max-width: 100%;
         padding: 0px 10px;
     }
+     #connect {
+        background-position: left;
+        background-size: auto;
+     }
     /* Heroe section */
     .splide, .splide__slide{
         width: auto !important;
@@ -21,10 +74,14 @@
         column-gap: 0px;
         flex-direction: column;
         row-gap: 30px;
+        height: 600px;
+        max-width: 50% !important;
     }
 
     .slide_container .text_head > .hd_btn {
         padding: 10px 20px;
+        position: relative;
+        top: 35px;
     }
     .splide__slide img{
         width: auto;
@@ -32,16 +89,19 @@
         display: flex;
         height: 260px;
     }
+    .slide_container .w_no_1{
+        width: 86% !important;
+    }
     .slide_container .text_head{
         padding-left: 20px !important;
-        width: 80%;
+        width: 100%;
     }
     .slide_container .text_head > p {
         margin: 25px 0px;
     }    
-    .splide--draggable>.splide__track>.splide__list>.splide__slide{
+    .splide--draggable>.splide__track>.splide__list>.spld_width{
         margin: 0px 30px;
-        max-width: 600px;
+        max-width: 100%;
         height: 100%;
     }
     .splide__arrow {
@@ -53,13 +113,22 @@
         height: 2em !important
     }
     .slide_container .text_head > h1{
-        font-size: 30px;
+        font-size: 30px !important;
+        max-width: 80%;
+        font-weight: 500;
+        margin: auto;
     }
     .slide_container .text_head > p{
         font-size: 14px;
+        width: 80%;
+        margin: auto;
+    }
+    .slide_container .text_head > #spk_can{
+        width: 40%;
+        margin: auto;
     }
     .logo a img {
-        width: 77px !important;
+        width: 90px !important;
         height: 25px !important;
     }
 
@@ -229,7 +298,7 @@
     }
 
     .ft_logo a img {
-        width: 77px;
+        width: 90px;
         height: 25px;
     }
 
@@ -248,9 +317,14 @@
     }
     .abt_sec_2  img {
         margin: auto;
+        width: 100%;
     }
-
-   
+    .abt_sec_1 {
+        padding-left: 0px;
+    }
+    .what_1 {
+        padding-left: 0px;
+    }
     .what_p{
         font-size: 14px;
     }
@@ -315,6 +389,7 @@
     }
     .frm_txt > p {
         font-size: 14px;
+        width: 100% ;
     }
 
     .co_ctre > h1{
@@ -394,14 +469,14 @@
         column-gap: 60px;
     }
 
-    .splide--draggable>.splide__track>.splide__list>.splide__slide
+    .splide--draggable>.splide__track>.splide__list>.spld_width
     {
-        width: auto !important;
-        margin: 0px 150px;
+        width: 1540px !important;
+        margin: auto;
     }
 
     .splide__slide img {
-        height: 280px;
+        /* height: 280px; */
     }
 
     .slide_container .text_head > h1{
@@ -585,7 +660,7 @@
     }
     .slide_container .text_head > h1 {
         font-size: 35px;
-        line-height: 44px;
+        /* line-height: 44px; */
     }
 
     .text_bx {
@@ -673,15 +748,34 @@
         font-size: 20px;
     }
     .slide_container .text_head{
-        width: 60%;
+        width: 80%;
     }
     .slide_container .text_head > h1{
         font-size: 30px;
         line-height: 35px;
+        width: 66%;
     }
 
+    .splide__pagination {
+        bottom: -2.1rem !important;
+    }
     .slide_container .text_head > p{
         line-height: 20px;
+        width: 50%;
+        margin: 43px auto;
+    }
+    .slide_container .text_head > h1{
+        font-size: 30px;
+        line-height: 35px;
+        width: 66%;
+    }
+
+    .slide_container .text_head > .w_1{
+        width: auto;
+    }
+
+    .slide_container .text_head > .w_2{
+        width: auto;
     }
 
     .splide__slide img {

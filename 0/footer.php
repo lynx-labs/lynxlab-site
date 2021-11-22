@@ -15,12 +15,11 @@
 
                 <div class="ft_involved">
                     <h3 class="in_text">
-                        9b , James Oluleye Street, off Adeniyi Jones Avenue, 
-                        Harmony Enclave Estate, Koko bus stop, Ikeja, Lagos
+                        9b, James Oluleye Crescent, Harmony Enclave Estate, off Adeniyi Jones Avenue, Ikeja, Lagos.
                     </h3>
 
                     <ul class="ft__01">
-                        <li class="ft__list" style="display:flex;align-items:center">
+                        <li class="ft__list" style="display:flex;align-items:center;justify-content:left">
                             <i class="icofont-phone-circle"></i>+2349010001990, +2349010001992
                         </li> 
                         <li class="ft__list" style="display:flex;align-items:center">
@@ -29,9 +28,9 @@
                        
                         <li class="ft__list">
                             <div class="ftIcons">
-                                <a href="#" class="ic_1"><i class='bx bxl-facebook-circle' ></i></a>
-                                <a href="#" class="ic_1"><i class='bx bxl-twitter' ></i></a>
-                                <a href="#" class="ic_1"><i class='bx bxl-instagram' ></i></a>
+                                <a href="https://web.facebook.com/LYNXDNA/?_rdc=1&_rdr" target="_blank" class="ic_1"><i class='bx bxl-facebook-circle' ></i></a>
+                                <a href="https://twitter.com/DnaLynx?s=09" target="_blank" class="ic_1"><i class='bx bxl-twitter' ></i></a>
+                                <a href="https://instagram.com/lynxdna?utm_medium=copy_link" target="_blank" class="ic_1"><i class='bx bxl-instagram' ></i></a>
                                 <p class="ic_txt">lynxdna</p>
                             </div>
                         </li> 
@@ -43,7 +42,7 @@
          
 
             <div class="ft_about">
-                <h3 class="in_text">RRELATED LINKS</h3>
+                <h3 class="in_text">RELATED LINKS</h3>
 
                 <ul class="ft__01">
                     <li class="ft__list active_2">
@@ -92,39 +91,45 @@
             <div class="overlay" style="width:auto; height:auto" id="ovrlay">
                 <div class="modals" id="mail_modal">
                 
-                    <div class="close" id='close'><i class='bx bx-x' ></i></div>
+                    <div class="close" id='close'>
+                        <div id="support">
+                            <img src="img/support.jpeg" alt="">
+                        </div>
+                        <i class='bx bx-x' ></i>
+                    </div>
                     
-                    <form id="mail_msg" method="POST" action="inc/manage_mail">
+                    <form id="mail_msg" method="POST" action="inc/manage_mail" name="sendForm">
                         <p id="intro">Welcome to lynxlaboratories, how may we help you?..</p>
                         <div class="form_group">
-                            <input type="email" name="email" id="email" class="email_1" placeholder="Your email">
+                            <input type="email" name="email" id="email" class="email_1" placeholder="Your email" onkeyup="checkfield()">
                             
                         </div>
                         <span id="ct_err" class="mail_er"></span>
                         
                         <div class="form_group">
-                            <input type="number" name="phone" id="phone" class="phone_1" placeholder="Your phone number">
+                            <input type="number" name="phone" id="phone" class="phone_1" placeholder="Your phone number" onkeyup="checkfield()">
                             
                         </div>
                         <span id="ct_err" class="phone_er"></span>
 
                         
                         <div class="form_group">
-                        <textarea name="message" class="message_1" id="message" placeholder="Message..."></textarea>
+                        <textarea name="message" style="height: 150px;" class="message_1" id="message" placeholder="Message..." onkeyup="checkfield()"></textarea>
                         
                         </div>
                         <span id="ct_err" class="msg_er"></span>
 
                         
-                        <input type="submit" value="Send message" name="send">
-                        <div class="response" id="respond">this is the message</div>
+                        <input type="submit" value="Send message" name="send" disabled="disabled" style="padding:0px" id="pick" >
                     </form>
 
                 </div>
-            </div>   
+            </div> 
+
+
         <!-- END OF MODALS SECTIONS -->
         <div class="modals_btn">
-            <a href="https://wa.me/<+2349010001990>" target="_blank" class="whtsap"><i class="icofont-brand-whatsapp"></i> </a>
+            <a href="https://api.whatsapp.com/send?phone=2349010001992" target="_blank" class="whtsap"><i class="icofont-brand-whatsapp"></i> </a>
             <a class="mail" id="mail_icon"><i class='bx bx-mail-send' ></i> </a>
         </div>
         <script>
